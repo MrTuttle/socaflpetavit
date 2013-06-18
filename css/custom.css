@@ -1,0 +1,322 @@
+html {
+	background: url(../img/background2.jpg) no-repeat center top fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+body {
+	padding-top: 20px;
+	padding-bottom: 40px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	background:none;
+}
+
+/* Custom container */
+.container-narrow {
+	margin: 0 auto;
+	max-width: 700px;
+	padding: 1em;
+	box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0.8) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.8)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	-moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px; 
+}
+.container-narrow > hr {
+	margin: 30px 0;
+}
+/* Main marketing message and sign up button */
+.jumbotron {
+	margin: 30px 0 30px 0;
+	text-align: center;
+}
+.jumbotron h1 {
+	font-size: 90px;
+	line-height: 1;
+font-family: 'Dosis', sans-serif;
+	/*font-family: 'Iceland', cursive;*/
+	font-weight: 100;
+}
+.jumbotron h4 {
+	margin-bottom:50px;
+}
+.jumbotron h3, .jumbotron h2 {
+	/*font-family: 'Iceland', cursive;*/
+	margin:0;
+}
+.jumbotron h3 {
+	font-size:1.5em;
+}
+.jumbotron h2 {
+	font-size:2.1em;
+	line-height:0.5em;
+}
+.jumbotron .bouton {
+	font-size: 21px;
+	padding: 14px 24px;
+}
+/* Supporting marketing content */
+.marketing {
+	margin: 45px 0;
+}
+.marketing p + h4 {
+	margin-top: 28px;
+}
+/* .muted{background: url(../img/logo_btp_small.png) no-repeat; height: 81px; text-indent:-2000px;} */
+
+.bold{
+	font-weight:bold;
+}
+
+.survol		{box-shadow: rgba(0,0,0,0) 0px 1px 5px; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; border: rgba(255,255,255,0) 20px solid; }
+.survol:hover {box-shadow: rgba(0,0,0,0.3) 0px 1px 5px; margin-top: -15px; margin-bottom: 15px;} 
+
+.logos {
+	width:100%;
+	margin: 0 auto;
+}
+.logos li {
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+	padding: 18px
+}
+.nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus {
+	color: #ffffff;
+	background-color: #000000;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.nav-pills a {
+	color:#000000;
+	color: rgba(0, 0, 0, 0.5);
+}
+hr {
+	margin: 20px 0;
+	border: 0;
+	border-top: 1px dotted #eeeeee;
+	border-top: 1px dotted rgba(0, 0, 0, 0.2);
+	border-bottom: 1px dotted #ffffff;
+	border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+	*border-bottom:1px dotted #ADADAD;
+}
+.ensavoirplus {
+	width:432px;
+	margin-top:60px;
+	margin:60px auto 50px auto;
+	text-align:left!important;
+}
+.ensavoirplus span {
+	font-size:0.8em;
+	font-weight:bold;
+}
+.ensavoirplus a {
+	text-align:center!important;
+	display:block;
+	font-size:2.8em;
+	font-family: 'Iceland', cursive;
+	color:#333333;
+}
+.ensavoirplus a:hover {
+	text-decoration:none;
+}
+#adresses {
+	text-align:left;
+	padding:0 0 0 50px;
+	margin-top:20px;
+}
+address .ville {
+	font-weight:bold;
+	border-bottom:1px dotted #92A3B7;
+}
+address .adresse {
+	font-size:0.9em;
+}
+address .telephone {
+	font-size:1em;
+	font-weight:bold;
+}
+.email {
+	font-style:italic;
+	font-size:0.9em;
+	margin-bottom:20px;
+	font-weight:bold;
+}
+.situation {
+	padding-top:80px;
+}
+#carte {
+	margin-right:20px;
+}
+.text-desc {
+	padding: 0 20px;
+	font-size:1em;
+}
+#pageapropos .jumbotron {
+	margin:0 0 60px 0;
+}
+#pageapropos > hr {
+	margin: 30px 0 0 0;
+}
+.text-apropos {
+	padding:10px 5px;
+	text-align:left;
+}
+.text-apropos h4 {
+	margin-bottom:0;
+}
+
+form{
+	margin-bottom:50px;
+}
+
+#legend{	
+	*margin-left:55px;
+}
+
+
+
+
+#form-contact {
+	text-align:left;
+	padding-left:30px;/* margin-top:20px;
+	margin-left:80px; */
+}
+/* #form-contact input[type="text"], #form-contact textarea{
+	width: 288px;
+} */
+
+#form-contact .control-label {
+	text-align:left;
+}
+.form-horizontal .controls {
+/* margin-left: 204px; */
+}
+sup {
+	color:red;
+}
+.colonne50 {
+	width:48%;
+	padding:0 5px 0 5px;
+	text-align:left;
+	float:left;
+}
+.logo {
+	clear:both;
+}
+.gras{
+	font-weight:bold;
+}
+.legende{
+	font-size:0.95em;
+}
+left{
+	float:left; 
+}
+
+#video {display: none;}
+.videoMSize{ width:360px; height:210px;}
+#videoM{display:none;}
+
+.dosis {font-family: 'Dosis', sans-serif; font-weight:300;
+}
+h4.dosis { font-size: 1.6em;}
+p.dosis {font-size:1.2em; line-height: 1.3em;}
+
+.footer h5{
+	border-bottom:1px dotted #ADADAD;
+}	
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+.justifie { text-align: center;}
+.jumbotron h1 {font-size: 36px;}
+jumbotron p {font-size: 12px;}
+.lead { margin: 0;}
+.cache {display:none !important;}
+#videoM{display:block;}
+.videoMSize{ width:260px; height:146px; background: none;}
+.colonne50{width:100%;}
+
+}
+/* GOOGLE map */
+#map-canvas img {
+    max-width: none;
+}
+.modal-backdrop, .modal-backdrop.fade.in {
+    opacity: 0.5;
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+.justifie { text-align: center;}
+.jumbotron h1 {font-size: 36px;}
+jumbotron p {font-size: 12px;}
+.lead { margin: 0;}
+.cache {display:none !important;}
+#videoM{display:block; margin-top: 1em;}
+.videoMSize{ width:260px; height:146px; border:#fff 4px solid; box-shadow: rgba(0,0,0,0.5) 0 4px 4px;}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+
+

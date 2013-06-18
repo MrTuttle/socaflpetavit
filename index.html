@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>BTP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Le styles -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+<!--
+<link href='http://fonts.googleapis.com/css?family=Iceland' rel='stylesheet' type='text/css'>
+-->
+<link href='http://fonts.googleapis.com/css?family=Dosis:600' rel='stylesheet' type='text/css'>
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+<!-- Fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="../assets/ico/favicon.png">
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container-narrow">
+<!-- 
+<div class="masthead">
+  <ul class="nav nav-pills pull-right">
+    <li class="active"><a href="/">Home</a></li>
+    <li><a href="apropos">A propos</a></li>
+    <li><a href="contact.php">Contact</a></li>
+  </ul>
+  <h3 class="muted"><a href="/"><img src="img/logo_btp_sall.png" alt="Logo BTP" title="logo BTP"/></a></h3>
+</div>
+-->
+<div class="jumbotron">
+  <!-- LOGOS -->
+  <div class="row-fluid marketing">
+	<div class="span6">
+		<a href="socafl.html"><img class="survol" src="img/lg_Socafl_bloc_T.png"/></a>
+    </div>
+	<div class="span6">
+		<a href="petavit.html"><img class="survol" src="img/lg_Petavit_bloc_T.png"/></a>
+    </div>
+  </div>
+  <!-- / LOGOS -->
+
+  <hr>
+
+  <p class="lead justifie">Socafl et Pétavit, entreprises indépendantes, développent leurs compétences dans tous les domaines liés aux métiers des TP. Implantées en région Rhône-alpes, elles apportent technicité et savoir-faire depuis plus de 60 ans aux collectivités locales et territoriales dans les domaines de la VRD, de l’assainissement, de la voirie et de la construction de réseaux pour fluide.
+</p>
+
+  <br/>
+  <br/>
+  <!---- form --->
+  <div class="row-fluid">
+	<div class="span12">
+      <form>
+    <fieldset>
+		<legend id="legend" style="border:none;">Vous voulez être informés de la mise en ligne de notre site ?</legend>
+		<input class="input" style="margin-bottom:0;" type="text" placeholder="mon@email.com">
+		<button type="submit" class="btn inputbtn">Envoyer</button>
+    </fieldset>
+    </form>
+	</div>
+  </div>
+  <!--- /form --->
+  <hr/>
+  <!-- ADRESSES -->
+  <div class="footer" style="text-align:left;">
+  	<!-- mymodal -->
+	<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index:300">
+		<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		<h3>Socafl</h3>
+		</div>
+		<div class="modal-body">
+			 <div id="map-canvas" style="height: 400px"></div>
+		</div>
+    </div>
+      <!-- /mymodal -->
+	   	<!-- mymodal -->
+      <div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index:300">
+		<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		<h3>Socafl</h3>
+		</div>
+		<div class="modal-body">
+			 <div id="map-canvas2" style="height: 400px"></div>
+		</div>
+    </div>
+      <!-- /mymodal -->
+	<div class="row-fluid">
+		<div class="span1"></div>
+		<div class="span4">
+			<h3>Socafl</h3>
+			<p><a href="#myModal" role="button" data-toggle="modal">zone artisanale Fontaine<br>01290 CROTTET</a></p>
+			<p><span class="bold">Contact :</span> <a href="mailto:socafl@socafl.com">socafl@socafl.com</a></p>
+		</div>
+		<div class="span5">
+			<h3>Petavit</h3>
+			<p><a href="#myModal2" role="button" data-toggle="modal">68 Chemin du Moulin Carron<br>69570 DARDILLY</a></p>
+			<p><span class="bold">Contact :</span> <a href="mailto:petavit@petavit.com">petavit@petavit.com</a></p>
+		</div>
+	</div>
+  </div>
+  <!-- /ADRESSES -->
+  
+</div>
+<!-- /container -->
+<!-- Le javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script>
+var map;
+var map2;
+var myLatlng;
+var myLatlng2;
+
+function initialize() {
+		myLatlng = new google.maps.LatLng(46.28064232255198, 4.903896243469262);
+		myLatlng2 = new google.maps.LatLng(45.80137329999999, 4.769335700000056);
+
+		
+		var mapOptions = {
+			zoom: 14,
+			center: myLatlng,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		
+		var mapOptions2 = {
+			zoom: 14,
+			center: myLatlng2,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		
+		map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+		map2 = new google.maps.Map(document.getElementById('map-canvas2'), mapOptions2);
+		
+		var marker = new google.maps.Marker({
+			position: myLatlng,
+			map: map
+		});
+		
+		var marker = new google.maps.Marker({
+			position: myLatlng2,
+			map: map2
+		});
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+
+
+$('#myModal').on('shown', function () {
+    google.maps.event.trigger(map, "resize");
+	map.setCenter(myLatlng);
+});
+$('#myModal2').on('shown', function () {
+    google.maps.event.trigger(map2, "resize");
+	map2.setCenter(myLatlng2);
+});
+</script>
+
+</body>
+</html>

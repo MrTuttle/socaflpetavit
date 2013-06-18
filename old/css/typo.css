@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Rye';
+    src: url('../RSC/fonts/Rye/Rye-Regular.eot');
+    src: url('../RSC/fonts/Rye/Rye-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../RSC/fonts/Rye/Rye-Regular.woff') format('woff'),
+         url('../RSC/fonts/Rye/Rye-Regular.ttf') format('truetype'),
+         url('../RSC/fonts/Rye/Rye-Regular.svg#nevisBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('../RSC/fonts/Proximanova/proximanova-webfont-webfont.eot');
+    src: url('../RSC/fonts/Proximanova/proximanova-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../RSC/fonts/Proximanova/proximanova-webfont-webfont.woff') format('woff'),
+         url('../RSC/fonts/Proximanova/proximanova-webfont-webfont.ttf') format('truetype'),
+         url('../RSC/fonts/Proximanova/proximanova-webfont-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'FjallaOne-Regular';
+    src: url('../RSC/fonts/Fjalla_One/acompilerFontSquirrel.eot');
+    src: url('../RSC/fonts/Fjalla_One/acompilerFontSquirrel.eot?#iefix') format('embedded-opentype'),
+         url('../RSC/fonts/Fjalla_One/acompilerFontSquirrel.woff') format('woff'),
+         url('../RSC/fonts/Fjalla_One/FjallaOne-Regular.ttf') format('truetype'),
+         url('../RSC/fonts/Fjalla_One/acompilerFontSquirrel.svg#acompilerFontSquirrel') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+	background:#eee;
+	background:url(../img/general/Lin-fin.gif) repeat;
+	color: #505050;
+	font: 100%/1.4 'proxima_nova_rgregular', "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+	padding: 0;
+	-webkit-text-size-adjust: none;
+}
+
+
+
+
+
+h1{ font-family:'Rye', "HelveticaNeue", "Helvetica", "Arial", sans-serif; font-size:3em; line-height:1.2em; color:#3f3f38; padding-bottom:0.3em; margin-top:1.2em; display:block; border-top:dotted 1px rgba(0,0,0,0.6); padding-top:1.2em;}
+
+h1:first-of-type {border:none;} /* cible le premier enfant de son type de l'élément parent. ici le premier h1 dans un conteneur*/ 
+h2{ font-family:Georgia, "Times New Roman", Times, serif; font-size:1.5em; font-style:italic; color:#6e1313;margin-bottom:0.6em;}
+p{font: 1em/1.4em 'proxima_nova_rgregular', "Helvetica Neue", Helvetica, Arial, sans-serif;letter-spacing: 0; margin-bottom:1.4em;margin-top:1em;}
+
+.encadre {background:#cadbe8; padding:1em; color:rgba(0,0,0,0.6); }
+.encadre p{ text-transform:uppercase; letter-spacing:0.1em; display:block; border-bottom: 1px rgba(0,0,0,0.2) dotted; padding:1em 0 1em 0;}
+.encadre ul {width:49%; float:left;}
+.encadre li { list-style:outside; margin-left:20px; margin-right:2em; margin-bottom:0.5em;}
+.clear {clear:both;}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	font-size: 0;
+	height:0;
+}
+.clearfix{
+	*display:inline-block;
+	_height:1%;
+}
+
+
+
+/*media queries -----------------------------------*/
+/*@media screen and (max-width:768px){
+	h1{font-size: 1.5em;}
+	h2{font-size: 1.2em;}
+	p{font-size: 1em;}
+}*/
+
+
+
+
